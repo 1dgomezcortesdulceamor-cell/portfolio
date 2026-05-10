@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cirugía Cardiovascular</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+
+    <!-- MARQUESINA -->
+    <div class="marquesina">
+        <marquee>
+            Cirugía Cardiovascular • Precisión • Tecnología Médica • Vida
+        </marquee>
+    </div>
+
+    <!-- CONTENEDOR -->
+    <div class="container">
+
+        <!-- PORTADA -->
+        <header class="card">
+
+            <h1 id="titulo">
+                Cirugía Cardiovascular
+            </h1>
+
+            <p>
+                <strong>Especialidad:</strong>
+                Cirugía del corazón y vasos sanguíneos
+            </p>
+
+            <p>
+                <strong>Tecnología:</strong>
+                Procedimientos quirúrgicos avanzados
+            </p>
+
+            <p>
+                <strong>Área Médica:</strong>
+                Cardiología Quirúrgica
+            </p>
+
+             <p>
+                ----------------------------------------------------------------------------------------------------
+            </p>
+
+             <p>
+                <strong>Equipo:</strong>
+                Dulce Amor, Rodrigo Sebastian, Andrea Campos, Valentina Negrete
+            </p>
+
+             <p>
+                <strong>Materia:</strong>
+                Tecnologia de la Informacion II
+            </p>
+
+             <p>
+                <strong>Profesor:</strong>
+                Medina Castillo Eliud
+            </p>
+
+        </header>
+
+        <!-- GRÁFICA -->
+        <section class="card">
+
+            <h2>
+                Estadísticas Médicas
+            </h2>
+
+            <canvas id="grafica"></canvas>
+
+        </section>
+
+        <!-- CARRUSEL -->
+        <section class="card">
+
+            <h2>
+                Procedimientos y Tecnología
+            </h2>
+
+            <div class="swiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img src="img1.jpg" alt="Cirugía">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="img2.jpg" alt="Corazón">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="img3.jpg" alt="Tecnología médica">
+                    </div>
+
+                </div>
+
+                <!-- FLECHAS -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <!-- PAGINACIÓN -->
+                <div class="swiper-pagination"></div>
+
+            </div>
+
+        </section>
+
+        <!-- INTERACCIÓN -->
+        <section class="card">
+
+            <h2>
+                Interacción Médica
+            </h2>
+
+            <button class="btn" id="boton1">
+                Información
+            </button>
+
+            <button class="btn" id="boton2">
+                Cambiar Ambiente
+            </button>
+
+        </section>
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

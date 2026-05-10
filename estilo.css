@@ -1,0 +1,230 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* FONDO GENERAL */
+body{
+
+    font-family:'Segoe UI', sans-serif;
+
+    background:
+    radial-gradient(circle at top,
+    rgba(255,0,80,0.25),
+    transparent 30%),
+
+    radial-gradient(circle at bottom,
+    rgba(255,0,0,0.15),
+    transparent 35%),
+
+    linear-gradient(
+    135deg,
+    #020202,
+    #120308,
+    #1a0007
+    );
+
+    color:white;
+
+    text-align:center;
+
+    min-height:100vh;
+}
+
+/* MARQUESINA */
+.marquesina{
+
+    background:black;
+
+    color:#ffd6df;
+
+    padding:12px;
+
+    font-size:15px;
+
+    letter-spacing:2px;
+
+    border-bottom:
+    1px solid rgba(255,0,80,0.4);
+
+    box-shadow:
+    0 0 20px rgba(255,0,80,0.2);
+}
+
+/* CONTENEDOR */
+.container{
+
+    width:90%;
+
+    max-width:1000px;
+
+    margin:auto;
+
+    padding:20px;
+}
+
+/* TARJETAS */
+.card{
+
+    background:
+    rgba(10,10,10,0.93);
+
+    border:
+    1px solid rgba(255,0,80,0.2);
+
+    padding:25px;
+
+    margin:25px 0;
+
+    border-radius:18px;
+
+    box-shadow:
+    0 0 25px rgba(255,0,80,0.12),
+    0 0 50px rgba(255,0,0,0.08);
+
+    transition:0.4s;
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 0 35px rgba(255,0,80,0.25),
+    0 0 60px rgba(255,0,0,0.15);
+}
+
+/* TITULO */
+#titulo{
+
+    background:
+    linear-gradient(
+    90deg,
+    #6e0018,
+    #c40038,
+    #6e0018
+    );
+
+    color:white;
+
+    padding:18px;
+
+    border-radius:12px;
+
+    margin-bottom:20px;
+
+    text-shadow:
+    0 0 10px rgba(255,255,255,0.4);
+
+    box-shadow:
+    0 0 25px rgba(255,0,80,0.35);
+}
+
+/* SUBTITULOS */
+h2{
+
+    margin-bottom:15px;
+
+    color:#ff4d6d;
+
+    text-shadow:
+    0 0 10px rgba(255,0,80,0.3);
+}
+
+/* TEXTO */
+p{
+
+    margin:8px 0;
+
+    color:#f2f2f2;
+}
+
+/* CARRUSEL */
+.swiper{
+
+    width:100%;
+
+    max-width:650px;
+
+    height:260px;
+
+    margin:auto;
+}
+
+/* IMAGENES */
+.swiper-slide img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    border:
+    2px solid rgba(255,0,80,0.35);
+
+    box-shadow:
+    0 0 20px rgba(255,0,80,0.15);
+}
+
+/* FLECHAS */
+.swiper-button-next,
+.swiper-button-prev{
+
+    color:#ff3366;
+}
+
+/* PAGINACION */
+.swiper-pagination-bullet{
+
+    background:#ff3366;
+}
+
+/* BOTONES */
+.btn{
+
+    margin:10px;
+
+    padding:13px 28px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:
+    linear-gradient(
+    90deg,
+    #8b001f,
+    #ff004c
+    );
+
+    color:white;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    box-shadow:
+    0 0 15px rgba(255,0,80,0.3);
+}
+
+.btn:hover{
+
+    transform:scale(1.05);
+
+    background:
+    linear-gradient(
+    90deg,
+    #ff004c,
+    #ff5c8a
+    );
+
+    box-shadow:
+    0 0 25px rgba(255,0,80,0.5);
+}
