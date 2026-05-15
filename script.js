@@ -1,42 +1,71 @@
-// GRÁFICA
+// GRAFICA
 const ctx = document.getElementById('grafica').getContext('2d');
 
 new Chart(ctx, {
 
-    type: 'bar',
+    type:'bar',
 
-    data: {
+    data:{
 
-        labels: [
+        labels:[
             'Cirugías',
             'Pacientes',
             'Tecnología'
         ],
 
-        datasets: [{
+        datasets:[{
 
-            label: 'Nivel (%)',
+            label:'Nivel (%)',
 
-            data: [
+            data:[
                 95,
                 88,
                 98
             ],
 
-            backgroundColor: [
+            backgroundColor:[
 
-                '#5DADE2', // azul médico
+                '#ff3366',
 
-                '#F8F9F9', // blanco quirúrgico
+                '#ffd6df',
 
-                '#D5D8DC'  // gris claro elegante
+                '#8a001f'
             ]
 
         }]
+    },
+
+    options:{
+
+        responsive:true,
+
+        plugins:{
+
+            legend:{
+                labels:{
+                    color:'white'
+                }
+            }
+        },
+
+        scales:{
+
+            y:{
+                ticks:{
+                    color:'white'
+                }
+            },
+
+            x:{
+                ticks:{
+                    color:'white'
+                }
+            }
+        }
     }
 });
 
-// CARRUSEL
+// SWIPER
 new Swiper('.swiper', {
 
     loop:true,
@@ -56,10 +85,10 @@ new Swiper('.swiper', {
     }
 });
 
-// BOTÓN INFORMACIÓN
+// BOTON INFORMACION
 document.getElementById("boton1").onclick = () => {
 
-    alert("🫀 Cirugía cardiovascular avanzada");
+    alert("🫀 La cirugía cardiovascular pediátrica combina precisión, tecnología y esperanza para salvar vidas desde los primeros latidos.");
 };
 
 // CAMBIAR AMBIENTE
@@ -73,3 +102,26 @@ document.getElementById("boton2").onclick = () => {
     #2c0012
     )`;
 };
+
+// ANIMACIONES
+gsap.from(".card", {
+
+    opacity:0,
+
+    y:40,
+
+    duration:1,
+
+    stagger:0.2
+});
+
+gsap.from(".menu-btn", {
+
+    opacity:0,
+
+    y:-20,
+
+    duration:1,
+
+    stagger:0.1
+});
