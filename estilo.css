@@ -1,11 +1,12 @@
 /* RESET */
 *{
+
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-/* FONDO GENERAL */
+/* BODY */
 body{
 
     font-family:'Segoe UI', sans-serif;
@@ -31,6 +32,8 @@ body{
     text-align:center;
 
     min-height:100vh;
+
+    scroll-behavior:smooth;
 }
 
 /* MARQUESINA */
@@ -51,6 +54,113 @@ body{
 
     box-shadow:
     0 0 20px rgba(255,0,80,0.2);
+}
+
+/* MENU */
+.menu{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    padding:18px;
+
+    background:
+    rgba(0,0,0,0.75);
+
+    backdrop-filter:blur(10px);
+
+    border-bottom:
+    1px solid rgba(255,0,80,0.25);
+
+    box-shadow:
+    0 0 25px rgba(255,0,80,0.15);
+}
+
+/* BOTONES MENU */
+.menu-btn{
+
+    position:relative;
+
+    text-decoration:none;
+
+    color:#ffd6df;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+    padding:12px 24px;
+
+    border-radius:30px;
+
+    transition:0.35s;
+
+    overflow:hidden;
+
+    border:
+    1px solid rgba(255,0,80,0.2);
+
+    background:
+    rgba(255,255,255,0.03);
+}
+
+/* HOVER */
+.menu-btn:hover{
+
+    transform:translateY(-3px);
+
+    color:white;
+
+    background:
+    linear-gradient(
+    90deg,
+    #7a001c,
+    #ff004c
+    );
+
+    box-shadow:
+    0 0 20px rgba(255,0,80,0.45),
+    0 0 40px rgba(255,0,80,0.2);
+}
+
+/* BRILLO */
+.menu-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:
+    linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.25),
+    transparent
+    );
+
+    transition:0.5s;
+}
+
+.menu-btn:hover::before{
+
+    left:100%;
 }
 
 /* CONTENEDOR */
@@ -139,9 +249,11 @@ p{
     margin:8px 0;
 
     color:#f2f2f2;
+
+    line-height:1.7;
 }
 
-/* CARRUSEL */
+/* SWIPER */
 .swiper{
 
     width:100%;
@@ -227,4 +339,20 @@ p{
 
     box-shadow:
     0 0 25px rgba(255,0,80,0.5);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .menu{
+
+        flex-direction:column;
+
+        align-items:center;
+    }
+
+    .swiper{
+
+        height:220px;
+    }
 }
